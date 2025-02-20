@@ -1,6 +1,6 @@
-@mixin font($fname, $fstyle, $fweight, $furl) {
+@mixin font($fname, $fstyle, $fweight, $furl, $format: 'woff2') {
 	@font-face {
-		src: url($furl) format('woff2');
+		src: url($furl) format($format);
 		font-family: $fname;
 		font-style: $fstyle;
 		font-weight: $fweight;
